@@ -52,8 +52,3 @@ module "blog_sg" {
   egress_rules = ["all-all"]
   egress_cidr_blocks = ["0.0.0.0/0"]
 }
-
-resource "aws_security_group" "blog"{
-  name = "blog"
-  vpc_id = data.aws_vpc.default.id
-}
